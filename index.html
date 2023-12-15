@@ -1,0 +1,1353 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/img/logo-32x32.png" sizes="32x32" />
+    <link rel="icon" href="assets/img/logo-192x192.png" sizes="192x192" />
+    <title>Salud Mental Online</title>
+    <link href="assets/css/plugins.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body class="v-dark bg-dots dsn-ajax">
+
+
+    <div id="dsn_preloader" class="preloader">
+        <svg width="100%" height="100%" viewBox="0 0 100 100" class="v-middle" preserveAspectRatio="xMinYMin meet"
+            fill="none">
+            <linearGradient id="linearColors" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="var(--theme-color)"></stop>
+                <stop offset="50%" stop-color="var(--border-color)"></stop>
+                <stop offset="100%" stop-color="var(--assistant-color)"></stop>
+            </linearGradient>
+            <path class="dsn-progress-path" d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+        <div class="loading-circle v-middle">
+            <p class="loading-count v-middle">0</p>
+        </div>
+
+        <span class="loading-text text-uppercase mt-30 dsn-container text-center"
+            style="width: 100vw; max-width: 100vw; margin-left: -100px !important;">Cargando...</span>
+        <div class="bg-load background-section d-flex align-items-end">
+            <svg class="dsn-separator-bottom dsn-icon-assistant-color" width="100%" height="100%" viewBox="0 0 100 10"
+                preserveAspectRatio="none">
+                <path class="path-anim separator__path" data-dsn-to="M 0 0 C 40 0 55 0 100 0 L 0 0 Z"
+                    vector-effect="non-scaling-stroke" d="M 0 0 C 40 16 75 10 100 0 L 0 0 Z"></path>
+            </svg>
+        </div>
+    </div>
+
+    <main id="main_root" class="main-root">
+
+        <!-- ========== Menu ========== -->
+        <header id="site_menu_header" class="site-header dsn-container d-none dsn-hamburger">
+            <div class="main-logo">
+                <a href="#" data-dsn-text="Blackdsn" class="custom-logo-link main-brand effect-ajax" rel="home"
+                    aria-current="page">
+                    <img src="assets/img/smo/logo.svg" class="custom-logo logo-light" alt="Salud Mental Online" />
+                    <img src="assets/img/smo/logo.svg" class="custom-logo logo-dark" alt="Salud Mental Online" />
+                </a>
+            </div>
+            <nav class="main-navigation">
+                <ul id="dsn-primary-list" class="primary-nav h2">
+                    <li class="nav-item">
+                        <a title="Quienes somos" href="#quienes-somos">
+                            <span class="overflow">¿Quiénes somos?</span>
+                        </a>
+                    </li>
+                    <li class="nav-item has-sub-menu">
+                        <a title="Te escuchamos" href="#te-escuchamos">
+                            <span class="overflow">Te escuchamos</span>
+                        </a>
+                        <ul class="nav-item">
+                            <li class="dsn-back">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px"
+                                        viewBox="0 0 400.004 400.004" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z" />
+                                        </g>
+                                    </svg>
+                                </span>
+                            </li>
+                            <li class="nav-item">
+                                <a title="Necesitás hablar" href="#te-escuchamos" data-dsn-text="Necesitás hablar">
+                                    <span class="overflow">¿Necesitás hablar?</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a title="Espacio de encuentro" href="#espacio-de-encuentro"
+                                    data-dsn-text="Espacio de encuentro">
+                                    <span class="overflow">Espacio de encuentro</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a title="Ayuda profesional" href="#ayuda-profesional"
+                                    data-dsn-text="Ayuda profesional">
+                                    <span class="overflow">Ayuda profesional</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-sub-menu">
+                        <a title="Temas de interés" href="#problematicas">
+                            <span class="overflow">Temas de interés</span>
+                        </a>
+                        <ul class="nav-item">
+                            <li class="dsn-back">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px"
+                                        viewBox="0 0 400.004 400.004" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z" />
+                                        </g>
+                                    </svg>
+                                </span>
+                            </li>
+                            <li class="nav-item">
+                                <a title="Problematicas" href="#problematicas" data-dsn-text="Problematicas">
+                                    <span class="overflow">Problemáticas</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a title="Instituciones" href="#instituciones" data-dsn-text="Instituciones">
+                                    <span class="overflow">Instituciones</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a title="Testimonios" href="#testimonios" data-dsn-text="Testimonios">
+                                    <span class="overflow">Testimonios</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a title="Sumate" href="#sumate">
+                            <span class="overflow">Sumate</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a title="Preguntas" href="#preguntas">
+                            <span class="overflow">Preguntas</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a title="Contacto" href="#contacto">
+                            <span class="overflow">Contacto</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="container-content d-flex flex-column justify-content-center section-margin">
+                    <div class="nav__info">
+                        <div class="nav-content mt-30">
+                            <h5 class="sm-title-block mb-10">Contacto</h5>
+                            <p class="links over-hidden mb-1">
+                                <a class="link-hover d-block" href="tel:1145617893" data-hover-text="11 4561-7893">11
+                                    4561-7893</a>
+                                <a class="link-hover" href="tel:1145617893" data-hover-text="11 4561-7893">11
+                                    4561-7893</a>
+                            </p>
+                            <p class="links over-hidden"><a class="link-hover"
+                                    href="mailto:info@saludmentalonline.com.ar"
+                                    data-hover-text="info@saludmentalonline.com.ar">info@saludmentalonline.com.ar</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="nav-social nav-content mt-30">
+                        <div class="nav-social-inner p-relative">
+                            <h5 class="sm-title-block mb-10">Seguinos</h5>
+                            <ul style="--dsn-li-name: dsn6;">
+                                <li style="--dsn-li-index: 2;"><a href="#" target="_blank"
+                                        rel="nofollow noopener noreferrer">Linkedin.</a></li>
+                                <li style="--dsn-li-index: 3;"><a href="#" target="_blank"
+                                        rel="nofollow noopener noreferrer">Instagram.</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div id="navbar_toggle" class="navbar-toggle">
+                <div class="toggle-icon">
+                    <div class="toggle-line"></div>
+                    <div class="toggle-line"></div>
+                    <div class="toggle-line"></div>
+                </div>
+                <div class="toggle-text">
+                    <div class="text-menu">Menú</div>
+                    <div class="text-open">Abrir</div>
+                    <div class="text-close">Cerrar</div>
+                </div>
+            </div>
+            <div class="bg-load background-main"></div>
+
+            <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none"
+                class="bg-load dsn-svg-transition">
+                <path vector-effect="non-scaling-stroke" d="M 0 100 V 100 Q 50 100 100 100 V 100 z" />
+            </svg>
+
+        </header>
+        <!-- ========== End Menu ========== -->
+
+
+        <!-- ========== Header ========== -->
+        <header id="dsn_header" class="dsn-header-animation dsn-full-header v-dark-head">
+            <div class="entry-header p-relative over-hidden">
+                <div id="hero_image" class="p-absolute dsn-hero-parallax-img over-hidden" data-dsn-ajax="img"
+                    data-overlay="6">
+                    <img src="assets/img/personal.jpg" class="cover-bg-img transform-3d" alt="" />
+                </div>
+
+                <div id="hero_content"
+                    class="d-flex p-relative h-100 dsn-hero-parallax-title container align-items-center">
+                    <div class="content p-relative">
+                        <div class="intro-project w-100">
+                            <div class="home intro-title">
+                                <div id="hero_title">
+                                    <h1 class="ah-headline title clip is-full-width">
+                                        <span>¿necesitás sentirte escuchado?</span>
+                                    </h1>
+                                </div>
+                                <h2 class="title-h2 mt-40 fw-300 is-full-width">
+                                    <span>¿necesitás sostén emocional?</span>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-head w-100 left-0 p-absolute bottom-0 z-index-2 pb-40">
+                    <div class="container d-grid grid-1-half">
+                        <ul class="dsn-grid-layout dsn-grid dsn-list w-100">
+                            <li class="list-item grid-item d-flex align-items-center">
+                                <p class="heading-color"><i class="fab fa-whatsapp"></i> 11 4561-7893</p>
+                            </li>
+                            <li class="list-item grid-item d-flex align-items-center">
+                                <p class="heading-color"><i class="fas fa-envelope"></i> info@saludmentalonline.com.ar
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="social-icons-wrapper d-grid grid-3 justify-self-end" data-dsn-gap="20px"
+                            data-dsn-iconsize="17px">
+                            <span class="grid-item">
+                                <a class="dsn-icon" href="#" target="_blank" rel="nofollow">
+                                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                                </a>
+                            </span>
+                            <span class="grid-item">
+                                <a class="dsn-icon" href="#" target="_blank" rel="nofollow">
+                                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </span>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <a href="#" rel="nofollow" class="dsn-scroll-bottom"
+                data-dsn-option='{"ease": "power4.inOut" , "duration" : 1.5}'>
+                <div class="text">MÁS INFO</div>
+            </a>
+        </header>
+        <!-- ========== End Header ========== -->
+
+
+        <div id="page_wrapper" class="wrapper">
+
+            <!-- ========== Quienes somos ========== -->
+            <div id="quienes-somos" class="v-light about-section about-arc background-section pt-120 pb-70">
+                <div class="container d-grid grid-md-2 mb-70">
+                    <div class="box-left pr-40">
+                        <p class="description mb-10">
+                            Llegaste a
+                        </p>
+                        <h2 class="title-h2 p-relative body-font heading-color fw-300">
+                            SALUD<strong>MENTAL</strong><br><span>online</span>
+                        </h2>
+                        <p class="dsn-heading-title d-inline-block p-relative mt-20">
+                            Una plataforma de asistencia para tu <strong>salud mental</strong>, dedicada a escucharte y
+                            acompañarte en todos tus procesos.
+                        </p>
+                        <h3 class="title-h3 p-relative body-font heading-color mt-40 color-smo">
+                            Nuestra misión
+                        </h3>
+                        <p class="dsn-heading-title d-inline-block p-relative mt-20">
+                            Ofrecerte un espacio de apoyo empático proporcionándote las herramientas necesarias para
+                            abordar cuestiones emocionales y psicológicas que debés enfrentar en los distintos procesos
+                            por los que tenés que transitar.
+                        </p>
+                        <p class="dsn-heading-title d-inline-block p-relative mt-20 fw-700">
+                            Te damos herramientas simples y accesibles que te ayuden a transformar tu vida.
+                        </p>
+                    </div>
+                    <div class="box-right box-img">
+                        <div class="dsn-bg-mask w-100 h-50 bottom-0 z-index-1"></div>
+                        <div class="img-first h-100">
+                            <img class="cover-bg-img" src="assets/img/arc1.jpg" alt="">
+                        </div>
+                        <div class="img-last h-100">
+                            <img class="cover-bg-img" src="assets/img/arc2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- ========== End Quienes somos ========== -->
+
+
+                <!-- ========== Andrea ========== -->
+                <div id="acerca-de-mi" class="container d-grid grid-md-2 d-grid-no-space">
+
+                    <div class="box-left box-creative p-relative">
+                        <div class="p-relative over-hidden h-100">
+                            <div class="img-box-parallax h-100 w-100 before-z-index dsn-animate dsn-effect-right"
+                                data-dsn-triggerhook="bottom" data-dsn-grid="move-up" data-overlay="1">
+                                <img src='assets/img/about-3.jpg' class="cover-bg-img has-direction"
+                                    data-dsn-position="50% 0%" alt='' />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box-right box-padding">
+                        <p class="description mb-10">
+                            Acerca de mí
+                        </p>
+                        <h2 class="title-h2 p-relative body-font heading-color text-upper mb-30 color-smo">
+                            Andrea Arrighi
+                        </h2>
+                        <p class="max-w570 mt-20">
+                            Con más de 25 años de experiencia como Psicóloga Clínica y de Empresas, he fusionado mi
+                            extenso bagaje profesional con mis experiencias personales, lo que me ha permitido
+                            desarrollar una comprensión profunda sobre la importancia de la salud mental en las diversas
+                            etapas de la vida y ante las diferentes crisis que enfrentamos.
+                        </p>
+                        <p class="max-w570 mt-20">
+                            Pongo a disposición mi sensibilidad y empatía para proporcionar escuchas atentas y
+                            conscientes, reconociendo a cada individuo como único y singular. Mi interés temprano por la
+                            salud mental me llevó a un continuo proceso de aprendizaje, nutriéndome tanto de mis
+                            pacientes como de las personas que han transitado por mi consultorio y entorno empresarial.
+                        </p>
+                        <p class="max-w570 mt-20">
+                            Soy Licenciada en Psicología por la Universidad Católica Argentina, donde también ejercí
+                            como docente durante muchos años. Mi pasión por capacitar a otros se entrelaza con la
+                            invaluable lección de que la enseñanza fluye en ambas direcciones.
+                        </p>
+                        <p class="max-w570 mt-20">
+                            He elegido rodearme de los mejores profesionales de diversas disciplinas en el ámbito de la
+                            salud mental, formando un equipo comprometido a acompañarte y orientarte en aquello que
+                            necesites. Para mí, la vida es movimiento, por lo que abrazo la premisa de que <strong>SIN
+                                SALUD MENTAL, NO HAY SALUD</strong>.
+                        </p>
+                    </div>
+
+                </div>
+                <!-- ========== End Andrea ========== -->
+
+            </div>
+
+
+            <!-- ========== Necesitas hablar ========== -->
+            <div id="te-escuchamos">
+                <div id="dsn_header" class="dsn-header-animation dsn-container section-padding v-dark-head alt-bg pt-0">
+                    <div class="entry-header p-relative over-hidden">
+                        <div id="hero_image" class="p-absolute dsn-hero-parallax-img over-hidden" data-dsn-ajax="img"
+                            data-overlay="1">
+                            <img src="assets/img/architecture.jpg" class="cover-bg-img transform-3d" alt="" />
+                        </div>
+
+                        <div id="hero_content"
+                            class="d-flex p-relative h-100 dsn-hero-parallax-title container align-items-end">
+                            <div class="content p-relative">
+                                <div class="intro-project w-100">
+                                    <div class="intro-title">
+                                        <div id="hero_title">
+                                            <h1 class="title" data-dsn-ajax="title">¿necesitás<br />hablar?</h1>
+                                        </div>
+                                        <div class="max-w570">
+                                            <h2 class="title-h2 mt-30 fw-300 is-full-width">
+                                                <span>Expresá tus emociones y compartí lo que te pasa.</span>
+                                            </h2>
+                                            <p class="subtitle-meta metas p-relative mt-10">
+                                                Dejame tus comentarios. Voy a escucharte, ayudarte y brindarte soporte
+                                                emocional junto con un equipo de profesionales formados para brindarte
+                                                un
+                                                espacio seguro y privado.
+                                            </p>
+                                            <p class="subtitle-meta metas p-relative mt-10">
+                                                En esta sección no vamos a brindarte diagnóstico ni tratamiento, pero
+                                                vamos
+                                                a escucharte y acompañarte para lograr un estado de bienestar emocional.
+                                            </p>
+                                            <div
+                                                class="dsn-def-btn d-flex dsn-border-style dsn-icon-heading-color mt-30">
+                                                <a class="dsn-btn dsn-border border-color-default background-section move-circle has-icon-left"
+                                                    href="#" data-dsn-text="TE ESCUCHO" data-dsn="parallax">
+                                                    <span
+                                                        class="dsn-icon dsn-bg-before btn-icon-left heading-color z-index-1">
+                                                        <i class="fab fa-whatsapp"></i>
+                                                    </span>
+                                                    <span class="title-btn p-relative z-index-1">TE ESCUCHO</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ========== End Necesitas hablar ========== -->
+
+
+            <!-- ========== Espacio encuentro ========== -->
+            <div class="about-section about-2 p-relative section-padding background-section pt-0">
+                <div class="p-relative container">
+                    <div class="p-relative d-grid grid-md-2 d-grid-no-space z-index-1">
+                        <div class="bg-mask background-main v-middle"></div>
+                        <div class="box-img">
+                            <img src="assets/img/photo-1.jpg" alt="">
+                            <img src="assets/img/photo-2.jpg" alt="">
+                        </div>
+                        <div class="box-info">
+                            <div class="section-title d-flex mt-section">
+                                <div class="sub-section-title">
+                                    <span class="title-h2 title-block-lg heading-color text-normal">
+                                        ¿Querés conocer gente con tu misma problemática?
+                                    </span>
+                                </div>
+                            </div>
+                            <p class="max-w570 mt-20 pr-120">
+                                Conectate con personas que estén o hayan pasado por una situación similar a la tuya para
+                                recibir apoyo y soporte emocional en comunidad.
+                            </p>
+                            <p class="max-w570 mt-20 pr-120">
+                                Este espacio tiene el propósito de mantener el respeto y la empatía hacia los demás,
+                                desde un lugar de amor y sin juicios. Está supervisado por profesionales de la salud
+                                mental que te brindarán apoyo y orientación cuando sea necesario.
+                            </p>
+                            <div class="dsn-def-btn d-flex dsn-border-style dsn-icon-heading-color mt-30 mb-30">
+                                <a class="dsn-btn dsn-border border-color-default background-section move-circle has-icon-left"
+                                    href="#" data-dsn-text="INGRESÁ A NUESTRO ESPACIO DE ENCUENTRO" data-dsn="parallax">
+                                    <span class="dsn-icon dsn-bg-before btn-icon-left heading-color z-index-1">
+                                        <i class="fas fa-users"></i>
+                                    </span>
+                                    <span class="title-btn p-relative z-index-1">INGRESÁ A NUESTRO ESPACIO DE
+                                        ENCUENTRO</span>
+                                </a>
+                            </div>
+                            <img class="mt-20" src="assets/img/photo-3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ========== End Espacio encuentro ========== -->
+
+
+            <!-- ========== Ayuda profesional ========== -->
+            <div class="p-relative mt-section section-padding hv-100 mt-0">
+
+                <div class="container d-flex flex-column justify-content-center h-100">
+                    <h1 class="title-h1 fs-4">
+                        ¿necesitás ayuda profesional?
+                    </h1>
+                    <h2 class="title-h2 mt-30 fw-300 is-full-width">
+                        <span>Pedí ayuda y apoyo psicoterapéutico.</span>
+                    </h2>
+                    <p class="mt-30 max-w570">
+                        A veces, nos encontramos en situaciones en las que la ayuda de un profesional se torna
+                        indispensable. Contar con el respaldo y tratamiento especializado proporciona las herramientas
+                        necesarias para navegar a través de diversos procesos y crisis que, de otra manera, podrían
+                        resultar difíciles de superar por cuenta propia.
+                        <span class="mb-10 d-block"></span>
+                        Contamos con un equipo de profesionales altamente capacitados, entre ellos psicólogos y
+                        psiquiatras, dispuestos a ofrecerte un apoyo continuo y de la más alta calidad.
+                    </p>
+                    <div class="dsn-def-btn d-flex dsn-border-style dsn-icon-heading-color mt-30">
+                        <a class="dsn-btn dsn-border border-color-default background-section move-circle has-icon-left"
+                            href="#" data-dsn-text="DEJÁ TU CONSULTA" data-dsn="parallax">
+                            <span class="dsn-icon dsn-bg-before btn-icon-left heading-color z-index-1">
+                                <i class="fab fa-whatsapp"></i>
+                            </span>
+                            <span class="title-btn p-relative z-index-1">DEJÁ TU CONSULTA</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="dsn-bg-section p-absolute w-100 h-100 over-hidden top-0 left-0" style="z-index: -1;">
+                    <div class="h-100 img-box-parallax before-z-index" data-dsn-grid="move-up" data-overlay="4">
+                        <img src="assets/img/about-4.jpg" class="cover-bg-img has-direction" alt="">
+                    </div>
+
+                </div>
+            </div>
+            <!-- ========== End Ayuda profesional ========== -->
+
+
+            <!-- ========== Artículos ========== -->
+            <div id="articulos"
+                class="p-relative pb-section over-hidden box-shadow-image box-image-transform dsn-style-cards">
+                <div class="root-posts">
+                    <div class="dsn-grid-layout dsn-grid dsn-posts dsn-post-type-cards use-horizontal-scroll box-image-normal"
+                        data-dsn-option='{"speed":15,"start":"0"}'>
+
+                        <article class="dsn-item-post start-section grid-item p-relative">
+                            <h2 class="dsn-animate-up letter-stroke">¿Querés saber más?</h2>
+                        </article>
+
+                        <article class="dsn-item-post grid-item over-hidden p-relative box-hover-image swiper-slide">
+                            <div class="box-content d-flex">
+                                <a class="effect-ajax box-image-link bg-shadow" href="#" data-dsn-ajax="work"
+                                    title="Migrantes">
+                                    <div class="box-image-bg before-z-index dsn-swiper-parallax-transform"
+                                        data-overlay="4">
+                                        <img class="cover-bg-img" src="assets/img/articulos1.jpg" alt="" />
+                                    </div>
+                                </a>
+                                <div class="post-content dsn-bg p-relative z-index-1 d-flex flex-column">
+                                    <div class="post-title-info">
+                                        <h1 class="post-title title-block">
+                                            <a href="#" class="effect-ajax" data-dsn-ajax="work">
+                                                Migrantes
+                                            </a>
+                                        </h1>
+                                        <a href="#" class="effect-ajax dsn-post-link move-circle border-color-heading"
+                                            data-dsn="parallax" data-dsn-ajax="work">
+                                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                                                <path class="arrow-after"
+                                                    d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="dsn-item-post grid-item over-hidden p-relative box-hover-image swiper-slide">
+                            <div class="box-content d-flex">
+                                <a class="effect-ajax box-image-link bg-shadow" href="#" data-dsn-ajax="work"
+                                    title="Soledad no deseada">
+                                    <div class="box-image-bg before-z-index dsn-swiper-parallax-transform"
+                                        data-overlay="3">
+                                        <img class="cover-bg-img" src="assets/img/articulos2.jpg" alt="" />
+                                    </div>
+                                </a>
+                                <div class="post-content dsn-bg p-relative z-index-1 d-flex flex-column">
+                                    <div class="post-title-info">
+                                        <h2 class="post-title title-block">
+                                            <a href="#" class="effect-ajax" data-dsn-ajax="work">
+                                                Soledad no deseada
+                                            </a>
+                                        </h2>
+                                        <a href="#" class="effect-ajax dsn-post-link move-circle border-color-heading"
+                                            data-dsn="parallax" data-dsn-ajax="work">
+                                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                                                <path class="arrow-after"
+                                                    d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="dsn-item-post grid-item over-hidden p-relative box-hover-image swiper-slide">
+                            <div class="box-content d-flex">
+                                <a class="effect-ajax box-image-link bg-shadow" href="#" data-dsn-ajax="work"
+                                    title="Depresión">
+                                    <div class="box-image-bg before-z-index dsn-swiper-parallax-transform"
+                                        data-overlay="2">
+                                        <img class="cover-bg-img" src="assets/img/articulos3.jpg" alt="" />
+                                    </div>
+                                </a>
+                                <div class="post-content dsn-bg p-relative z-index-1 d-flex flex-column">
+                                    <div class="post-title-info">
+                                        <h2 class="post-title title-block">
+                                            <a href="#" class="effect-ajax" data-dsn-ajax="work">
+                                                Depresión
+                                            </a>
+                                        </h2>
+                                        <a href="#" class="effect-ajax dsn-post-link move-circle border-color-heading"
+                                            data-dsn="parallax" data-dsn-ajax="work">
+                                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                                                <path class="arrow-after"
+                                                    d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="dsn-item-post grid-item over-hidden p-relative box-hover-image swiper-slide">
+                            <div class="box-content d-flex">
+                                <a class="effect-ajax box-image-link bg-shadow" href="#" data-dsn-ajax="work"
+                                    title="Suicidio">
+                                    <div class="box-image-bg before-z-index dsn-swiper-parallax-transform"
+                                        data-overlay="2">
+                                        <img class="cover-bg-img" src="assets/img/articulos4.jpg" alt="" />
+                                    </div>
+                                </a>
+                                <div class="post-content dsn-bg p-relative z-index-1 d-flex flex-column">
+                                    <div class="post-title-info">
+                                        <h2 class="post-title title-block">
+                                            <a href="#" class="effect-ajax" data-dsn-ajax="work">
+                                                Suicidio
+                                            </a>
+                                        </h2>
+                                        <a href="#" class="effect-ajax dsn-post-link move-circle border-color-heading"
+                                            data-dsn="parallax" data-dsn-ajax="work">
+                                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                                                <path class="arrow-after"
+                                                    d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="dsn-item-post grid-item over-hidden p-relative box-hover-image swiper-slide">
+                            <div class="box-content d-flex">
+                                <a class="effect-ajax box-image-link bg-shadow" href="#" data-dsn-ajax="work"
+                                    title="Ansiedad">
+                                    <div class="box-image-bg before-z-index dsn-swiper-parallax-transform"
+                                        data-overlay="4">
+                                        <img class="cover-bg-img" src="assets/img/articulos5.jpg" alt="" />
+                                    </div>
+                                </a>
+                                <div class="post-content dsn-bg p-relative z-index-1 d-flex flex-column">
+                                    <div class="post-title-info">
+                                        <h2 class="post-title title-block">
+                                            <a href="#" class="effect-ajax" data-dsn-ajax="work">
+                                                Ansiedad
+                                            </a>
+                                        </h2>
+                                        <a href="#" class="effect-ajax dsn-post-link move-circle border-color-heading"
+                                            data-dsn="parallax" data-dsn-ajax="work">
+                                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                                                <path class="arrow-after"
+                                                    d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="dsn-item-post grid-item over-hidden p-relative box-hover-image swiper-slide">
+                            <div class="box-content d-flex">
+                                <a class="effect-ajax box-image-link bg-shadow" href="#" data-dsn-ajax="work"
+                                    title="Miedo al compromiso">
+                                    <div class="box-image-bg before-z-index dsn-swiper-parallax-transform"
+                                        data-overlay="4">
+                                        <img class="cover-bg-img" src="assets/img/articulos6.jpg" alt="" />
+                                    </div>
+                                </a>
+                                <div class="post-content dsn-bg p-relative z-index-1 d-flex flex-column">
+                                    <div class="post-title-info">
+                                        <h2 class="post-title title-block">
+                                            <a href="#" class="effect-ajax" data-dsn-ajax="work">
+                                                Miedo al compromiso
+                                            </a>
+                                        </h2>
+                                        <a href="#" class="effect-ajax dsn-post-link move-circle border-color-heading"
+                                            data-dsn="parallax" data-dsn-ajax="work">
+                                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                                                <path class="arrow-after"
+                                                    d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="dsn-item-post grid-item over-hidden p-relative box-hover-image swiper-slide">
+                            <div class="box-content d-flex">
+                                <a class="effect-ajax box-image-link bg-shadow" href="#" data-dsn-ajax="work"
+                                    title="Suicidio">
+                                    <div class="box-image-bg before-z-index dsn-swiper-parallax-transform"
+                                        data-overlay="2">
+                                        <img class="cover-bg-img" src="assets/img/articulos7.jpg" alt="" />
+                                    </div>
+                                </a>
+                                <div class="post-content dsn-bg p-relative z-index-1 d-flex flex-column">
+                                    <div class="post-title-info">
+                                        <h2 class="post-title title-block">
+                                            <a href="#" class="effect-ajax" data-dsn-ajax="work">
+                                                Suicidio
+                                            </a>
+                                        </h2>
+                                        <a href="#" class="effect-ajax dsn-post-link move-circle border-color-heading"
+                                            data-dsn="parallax" data-dsn-ajax="work">
+                                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                                                <path class="arrow-after"
+                                                    d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="dsn-item-post grid-item over-hidden p-relative box-hover-image swiper-slide">
+                            <div class="box-content d-flex">
+                                <a class="effect-ajax box-image-link bg-shadow" href="#" data-dsn-ajax="work"
+                                    title="Ansiedad">
+                                    <div class="box-image-bg before-z-index dsn-swiper-parallax-transform"
+                                        data-overlay="4">
+                                        <img class="cover-bg-img" src="assets/img/articulos8.jpg" alt="" />
+                                    </div>
+                                </a>
+                                <div class="post-content dsn-bg p-relative z-index-1 d-flex flex-column">
+                                    <div class="post-title-info">
+                                        <h2 class="post-title title-block">
+                                            <a href="#" class="effect-ajax" data-dsn-ajax="work">
+                                                Ansiedad
+                                            </a>
+                                        </h2>
+                                        <a href="#" class="effect-ajax dsn-post-link move-circle border-color-heading"
+                                            data-dsn="parallax" data-dsn-ajax="work">
+                                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                                                <path class="arrow-after"
+                                                    d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="dsn-item-post grid-item over-hidden p-relative box-hover-image swiper-slide">
+                            <div class="box-content d-flex">
+                                <a class="effect-ajax box-image-link bg-shadow" href="#" data-dsn-ajax="work"
+                                    title="Miedo al compromiso">
+                                    <div class="box-image-bg before-z-index dsn-swiper-parallax-transform"
+                                        data-overlay="4">
+                                        <img class="cover-bg-img" src="assets/img/articulos9.jpg" alt="" />
+                                    </div>
+                                </a>
+                                <div class="post-content dsn-bg p-relative z-index-1 d-flex flex-column">
+                                    <div class="post-title-info">
+                                        <h2 class="post-title title-block">
+                                            <a href="#" class="effect-ajax" data-dsn-ajax="work">
+                                                Miedo al compromiso
+                                            </a>
+                                        </h2>
+                                        <a href="#" class="effect-ajax dsn-post-link move-circle border-color-heading"
+                                            data-dsn="parallax" data-dsn-ajax="work">
+                                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                                                <path class="arrow-after"
+                                                    d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+
+
+
+                        <article class="dsn-item-post end-section grid-item p-relative">
+                            <h6 class="dsn-animate-up max-w750">Informate sobre distintas problemáticas que afectan
+                                a nivel mundial a las personas</h6>
+                            <p class="mt-30 max-w950">
+                                La salud mental ha sido una de las partes más afectadas durante los años de pandemia. En
+                                la actualidad, se estima que 450 millones de personas sufren alguno de los problemas que
+                                engloban, pero entre el 35% y el 50% de ellas no reciben tratamiento o, en caso de
+                                hacerlo, es inadecuado.
+                                <span class="mb-10 d-block"></span>
+                                Sumado a esto, los expertos señalan que los problemas de salud mental serán la principal
+                                causa de discapacidad a nivel mundial en el 2030, según la Organización Mundial de la
+                                Salud (OMS).
+                            </p>
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+            <!-- ========== End Artículos ========== -->
+
+
+            <!-- ========== A donde ir ========== -->
+            <div id="instituciones" class="v-light section-padding">
+                <div class="container">
+                    <div class="sub-section-title title-h2 title-block-lg d-block heading-color mb-20 color-smo">
+                        A donde ir
+                    </div>
+                    <div class="sub-section-title title-h3 d-block mb-0 fs-1-5 fw-300 color-p">
+                        Te conectamos con instituciones y ONG que tratan tu problemática de manera gratuita.
+                    </div>
+                    <div class="icon-top dsn-icon-heading-color mt-80">
+                        <div class="dsn-service d-grid grid-lg-3 grid-sm-2" data-dsn-gap="40px 30px"
+                            data-dsn-iconsize="50px">
+
+                            <div class="dsn-up service-item p-relative grid-item border-bottom">
+                                <div class="service-item-inner number-item h-100">
+                                    <div class="service-content p-relative">
+                                        <h4 class="service_title title-block mb-30">CABA</h4>
+                                        <div class="service_description max-w570 dsn-auto">
+                                            <div class="zona">
+                                                <p class="title-inst">Nombre simulado de centro terapéutico</p>
+                                                <p>Av. Cabildo 324, piso 2</p>
+                                                <p>(011) 2413-4294</p>
+                                                <p>nombre@mail.com</p>
+                                            </div>
+                                            <div class="zona">
+                                                <p class="title-inst">Nombre simulado de centro terapéutico</p>
+                                                <p>Av. Cabildo 324, piso 2</p>
+                                                <p>(011) 2413-4294</p>
+                                                <p>nombre@mail.com</p>
+                                            </div>
+                                            <div class="zona">
+                                                <p class="title-inst">Nombre simulado de centro terapéutico</p>
+                                                <p>Av. Cabildo 324, piso 2</p>
+                                                <p>(011) 2413-4294</p>
+                                                <p>nombre@mail.com</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="dsn-up service-item p-relative grid-item border-bottom">
+                                <div class="service-item-inner number-item h-100">
+                                    <div class="service-content p-relative">
+                                        <h4 class="service_title title-block mb-30">Buenos Aires</h4>
+                                        <div class="service_description max-w570 dsn-auto">
+                                            <div class="zona">
+                                                <p class="title-inst">Nombre simulado de centro terapéutico</p>
+                                                <p>Av. Cabildo 324, piso 2</p>
+                                                <p>(011) 2413-4294</p>
+                                                <p>nombre@mail.com</p>
+                                            </div>
+                                            <div class="zona">
+                                                <p class="title-inst">Nombre simulado de centro terapéutico</p>
+                                                <p>Av. Cabildo 324, piso 2</p>
+                                                <p>(011) 2413-4294</p>
+                                                <p>nombre@mail.com</p>
+                                            </div>
+                                            <div class="zona">
+                                                <p class="title-inst">Nombre simulado de centro terapéutico</p>
+                                                <p>Av. Cabildo 324, piso 2</p>
+                                                <p>(011) 2413-4294</p>
+                                                <p>nombre@mail.com</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="dsn-up service-item p-relative grid-item border-bottom">
+                                <div class="service-item-inner number-item h-100">
+                                    <div class="service-content p-relative">
+                                        <h4 class="service_title title-block mb-30">Rosario</h4>
+                                        <div class="service_description max-w570 dsn-auto">
+                                            <div class="zona">
+                                                <p class="title-inst">Nombre simulado de centro terapéutico</p>
+                                                <p>Av. Cabildo 324, piso 2</p>
+                                                <p>(011) 2413-4294</p>
+                                                <p>nombre@mail.com</p>
+                                            </div>
+                                            <div class="zona">
+                                                <p class="title-inst">Nombre simulado de centro terapéutico</p>
+                                                <p>Av. Cabildo 324, piso 2</p>
+                                                <p>(011) 2413-4294</p>
+                                                <p>nombre@mail.com</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="dsn-up service-item p-relative grid-item border-bottom">
+                                <div class="service-item-inner number-item h-100">
+                                    <div class="service-content p-relative">
+                                        <h4 class="service_title title-block mb-30">Córdoba</h4>
+                                        <div class="service_description max-w570 dsn-auto">
+                                            <div class="zona">
+                                                <p class="title-inst">Nombre simulado de centro terapéutico</p>
+                                                <p>Av. Cabildo 324, piso 2</p>
+                                                <p>(011) 2413-4294</p>
+                                                <p>nombre@mail.com</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="dsn-up service-item p-relative grid-item border-bottom">
+                                <div class="service-item-inner number-item h-100">
+                                    <div class="service-content p-relative">
+                                        <h4 class="service_title title-block mb-30">Mendoza</h4>
+                                        <div class="service_description max-w570 dsn-auto">
+                                            <div class="zona">
+                                                <p class="title-inst">Nombre simulado de centro terapéutico</p>
+                                                <p>Av. Cabildo 324, piso 2</p>
+                                                <p>(011) 2413-4294</p>
+                                                <p>nombre@mail.com</p>
+                                            </div>
+                                            <div class="zona">
+                                                <p class="title-inst">Nombre simulado de centro terapéutico</p>
+                                                <p>Av. Cabildo 324, piso 2</p>
+                                                <p>(011) 2413-4294</p>
+                                                <p>nombre@mail.com</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="dsn-up service-item p-relative grid-item border-bottom">
+                                <div class="service-item-inner number-item h-100">
+                                    <div class="service-content p-relative">
+                                        <h4 class="service_title title-block mb-30">Salta</h4>
+                                        <div class="service_description max-w570 dsn-auto">
+                                            <div class="zona">
+                                                <p class="title-inst">Nombre simulado de centro terapéutico</p>
+                                                <p>Av. Cabildo 324, piso 2</p>
+                                                <p>(011) 2413-4294</p>
+                                                <p>nombre@mail.com</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- ========== End A donde ir ========== -->
+
+
+            <!-- ========== Testimonios ========== -->
+            <div class="p-relative section-padding background-section">
+                <div class="container">
+                    <div class="sub-section-title title-h2 title-block-lg d-block heading-color mb-20 text-center">
+                        Testimonios
+                    </div>
+                    <div class="sub-section-title title-h3 d-block mb-0 fs-1-5 fw-300 mb-80 text-center">
+                        Conocé en primera persona todas experiencias.
+                    </div>
+                    <div class="filter-swiper-blur image-left-style quote-box-style elementor-align-center text-center">
+                        <div class="dsn-testimonials dsn-swiper p-relative has-parallax-image"
+                            data-dsn-option='{"spaceBetween":30,"slidesPerView":1}'>
+
+                            <div class="testimonials-content">
+                                <div class="testimonial-inner">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                        viewBox="0 0 509 396.83" enable-background="new 0 0 509 396.83"
+                                        xml:space="preserve">
+                                        <g>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M105.098,396.83c-2.062,0-4.122,0-6.183,0 c0.123-48.731,0.116-97.466,0.493-146.195c0.062-7.844-3.65-8.881-10.09-8.843c-29.772,0.182-59.545,0.047-89.318,0.026 C0,161.382,0,80.947,0,0c81.742,0,163.484,0,245.227,0c0.023,83.874,0.496,167.752-0.071,251.624 c-0.436,64.131-47.354,121.936-109.503,136.974C125.404,391.076,115.279,394.073,105.098,396.83z M127.891,360.509 c6.063-1.545,10.049-2.226,13.799-3.568c42.174-15.098,74.277-58.896,74.735-104.55c0.718-71.273,0.187-142.558,0.454-213.837 c0.03-7.696-2.596-10.07-10.136-10.038c-55.961,0.236-111.927,0.287-167.887-0.042c-8.413-0.049-10.398,3.014-10.363,10.831 c0.254,54.408,0.317,108.815-0.047,163.22c-0.061,8.994,3.321,10.93,11.452,10.803c25.744-0.405,51.505,0.184,77.245-0.329 c8.78-0.174,10.986,2.931,10.911,11.301c-0.363,40.63-0.164,81.264-0.163,121.897C127.891,350.262,127.891,354.325,127.891,360.509 z" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M368.871,396.83c-2.061,0-4.122,0-6.184,0 c0.057-48.133-0.099-96.267,0.354-144.395c0.081-8.996-3.268-10.854-11.386-10.722c-26.047,0.42-52.108-0.083-78.152,0.299 c-7.577,0.108-10.083-2.194-10.053-9.942c0.294-77.357,0.262-154.713,0.322-232.07C345.353,0,426.929,0,509,0 c0,89.562,0,179.125,0,268.687c-1.256,3.464-2.793,6.854-3.73,10.401c-15.376,58.112-51.126,95.756-109.9,110.431 C386.48,391.735,377.7,394.382,368.871,396.83z M391.554,360.501c5.951-1.528,9.958-2.176,13.686-3.57 c43.103-16.135,74.464-59.44,74.864-105.611c0.616-70.931,0.138-141.869,0.404-212.803c0.03-7.722-2.58-10.037-10.111-10.005 c-55.963,0.24-111.926,0.285-167.889-0.036c-8.406-0.048-10.429,3.048-10.392,10.853c0.245,54.405,0.31,108.813-0.049,163.216 c-0.059,9.03,3.45,10.9,11.528,10.778c25.741-0.39,51.504,0.193,77.245-0.325c8.785-0.178,10.956,2.917,10.878,11.284 c-0.368,40.629-0.167,81.263-0.165,121.897C391.554,350.25,391.554,354.318,391.554,360.501z" />
+                                        </g>
+                                    </svg>
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide testimonial-inner-item">
+                                                <div class="testimonial-item">
+                                                    <div class="testimonial-content mb-25">
+                                                        <div class="quote">
+                                                            <p class="max-w750 testimonial-content p-large">
+                                                                Si alguien ama una flor, de la que sólo crece una sola
+                                                                en todos los millones y millones de estrellas, es
+                                                                suficiente para hacerle feliz con sólo mirar las
+                                                                estrellas. Puede decirse a sí mismo, «En algún lugar, mi
+                                                                flor está ahí… Pero si la oveja se come la flor, en un
+                                                                momento todas sus estrellas se oscurecerán… ¡Y tú crees
+                                                                que eso no es importante!.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="content-inner border-top justify-content-center">
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="label box-text">
+                                                                <h4 class="testimonial-name sm-title-block">Ofelia
+                                                                    Powell</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide testimonial-inner-item">
+
+                                                <div class="testimonial-item">
+                                                    <div class="testimonial-content mb-25">
+                                                        <div class="quote">
+                                                            <p class="max-w750 testimonial-content p-large">
+                                                                Cuando encuentras un diamante que no es de nadie, es
+                                                                tuyo. Cuando encuentras una isla que no es de nadie, es
+                                                                tuya. Cuando eres el primero en tener una idea, la haces
+                                                                patentar: es tuya. Yo poseo las estrellas porque jamás
+                                                                nadie antes que yo soñó con poseerlas.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="content-inner border-top justify-content-center">
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="label box-text">
+                                                                <h4 class="testimonial-name sm-title-block">Nicolás
+                                                                    Harvard</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide testimonial-inner-item">
+                                                <div class="testimonial-item">
+                                                    <div class="testimonial-content mb-25">
+                                                        <div class="quote">
+                                                            <p class="max-w750 testimonial-content p-large">
+                                                                Cuando encuentras un diamante que no es de nadie, es
+                                                                tuyo. Cuando encuentras una isla que no es de nadie, es
+                                                                tuya. Cuando eres el primero en tener una idea, la haces
+                                                                patentar: es tuya. Yo poseo las estrellas porque jamás
+                                                                nadie antes que yo soñó con poseerlas.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="content-inner border-top justify-content-center">
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="label box-text">
+                                                                <h4 class="testimonial-name sm-title-block">Pablo Girard
+                                                                </h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="dsn-swiper-paginate d-flex p-relative w-100 h-100 mt-30 align-items-center container justify-content-between">
+                                    <div class="swiper-prev">
+                                        <div class="prev-container">
+                                            <div class="container-inner">
+                                                <div class="triangle"></div>
+                                                <svg class="circle" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 24 24">
+                                                    <g class="circle-wrap" fill="none" stroke-width="1"
+                                                        stroke-linejoin="round" stroke-miterlimit="10">
+                                                        <circle cx="12" cy="12" r="10.5"></circle>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination mr-30 ml-30 heading-color" data-dsn-type="bullets">
+                                    </div>
+                                    <div class="swiper-next">
+                                        <div class="next-container">
+                                            <div class="container-inner">
+                                                <div class="triangle"></div>
+                                                <svg class="circle" xmlns="http://www.w3.org/2000/svg" width="24"
+                                                    height="24" viewBox="0 0 24 24">
+                                                    <g class="circle-wrap" fill="none" stroke-width="1"
+                                                        stroke-linejoin="round" stroke-miterlimit="10">
+                                                        <circle cx="12" cy="12" r="10.5"></circle>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ========== End Testimonios ========== -->
+
+
+            <!-- ========== Profesionales ========== -->
+            <div id="profesionales"
+                class="right-box-image section-margin dsn-container dsn-left-container over-hidden p-relative">
+                <div class="box-img">
+                    <div class="img-box-parallax h-v-80 w-100 before-z-index dsn-animate dsn-effect-left"
+                        data-dsn-triggerhook="bottom" data-dsn-grid="move-up" data-overlay="1">
+                        <img src='assets/img/about-8.jpg' class="cover-bg-img has-direction" alt='' />
+                    </div>
+                </div>
+                <div class="box-info background-section box-padding section-margin" data-dsn-gap="30px 30px">
+                    <p class="description mb-10">
+                        Profesionales
+                    </p>
+                    <h2 class="title-h2">¿Sos un profesional de la salud mental?</h2>
+                    <p class="mt-20 pt-20 border-top fs-1-5">
+                        Formá parte de nuestro equipo.<br>¡Juntos podemos cambiarle la vida a miles de personas!
+                    </p>
+                    <div class="dsn-def-btn d-flex dsn-border-style dsn-icon-heading-color mt-30">
+                        <a class="dsn-btn dsn-border border-color-default background-section move-circle has-icon-left"
+                            href="#" data-dsn-text="PONETE EN CONTACTO" data-dsn="parallax">
+                            <span class="dsn-icon dsn-bg-before btn-icon-left z-index-1">
+                                <i class="fab fa-whatsapp"></i>
+                            </span>
+                            <span class="title-btn p-relative z-index-1">PONETE EN CONTACTO</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- ========== End Profesionales ========== -->
+
+
+            <!-- ========== Preguntas frecuentes ========== -->
+            <div id="faq" class="v-light section-padding">
+                <div class="about-section container d-grid grid-md-2" data-dsn-gap="30px 60px">
+                    <div class="box-left p-relative pinned-scroll">
+                        <div class="pinned-element">
+                            <h2 class="title-h2 body-font">Preguntas frecuentes</h2>
+                        </div>
+                    </div>
+                    <div class="box-right">
+                        <div class="dsn-accordion" role="tablist">
+                            <div class="accordion__wrapper">
+
+                                <div class="accordion__item active">
+                                    <div
+                                        class="accordion__question user-no-selection expanded d-flex align-items-center">
+                                        <span class="number background-theme h6">1</span>
+                                        <h2 class="sm-title-block tab-title heading-color" role="tab" data-tab="0">
+                                            ¿Cómo la psicología aborda el estudio de la memoria?</h2>
+                                    </div>
+                                    <div class="accordion__answer tab-description active" role="tabpanel" data-tab="0">
+                                        <p>La psicología cognitiva examina la memoria desde una perspectiva mental,
+                                            analizando cómo la información se almacena, procesa y recupera. Conceptos
+                                            como la memoria a corto y largo plazo, codificación, recuperación y olvido
+                                            son fundamentales en esta área.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion__item">
+                                    <div class="accordion__question user-no-selection d-flex align-items-center">
+                                        <span class="number background-theme h6">2</span>
+                                        <h2 class="sm-title-block tab-title heading-color" role="tab" data-tab="1">
+                                            ¿Qué es la teoría del apego y cómo influye en el desarrollo emocional de un
+                                            niño?</h2>
+                                    </div>
+                                    <div class="accordion__answer tab-description" role="tabpanel" data-tab="1">
+                                        <p>La teoría del apego, propuesta por John Bowlby, sostiene que los niños
+                                            desarrollan vínculos emocionales con sus cuidadores principales, lo que
+                                            afecta significativamente su desarrollo emocional y social. Estos lazos
+                                            influyen en la capacidad del niño para establecer relaciones saludables y
+                                            regular sus emociones.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion__item">
+                                    <div class="accordion__question user-no-selection d-flex align-items-center">
+                                        <span class="number background-theme h6">3</span>
+                                        <h2 class="sm-title-block tab-title heading-color" role="tab" data-tab="2">
+                                            ¿Cuáles son los principios básicos de la terapia cognitivo-conductual y cómo
+                                            se aplican en el tratamiento de trastornos mentales?</h2>
+                                    </div>
+                                    <div class="accordion__answer tab-description" role="tabpanel" data-tab="2">
+                                        <p>La terapia cognitivo-conductual se basa en la idea de que los pensamientos,
+                                            sentimientos y comportamientos están interrelacionados. Se centra en
+                                            identificar y cambiar patrones de pensamiento negativos y comportamientos
+                                            poco saludables, siendo eficaz en el tratamiento de trastornos como la
+                                            depresión y la ansiedad.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion__item">
+                                    <div class="accordion__question user-no-selection d-flex align-items-center">
+                                        <span class="number background-theme h6">4</span>
+                                        <h2 class="sm-title-block tab-title heading-color" role="tab" data-tab="3">
+                                            ¿Cómo afecta el estrés crónico a la salud mental y física?</h2>
+                                    </div>
+                                    <div class="accordion__answer tab-description" role="tabpanel" data-tab="3">
+                                        <p>El estrés crónico puede tener un impacto negativo en la salud mental y
+                                            física. A nivel mental, puede contribuir al desarrollo de trastornos como la
+                                            ansiedad y la depresión. A nivel físico, está asociado con problemas de
+                                            salud como enfermedades cardíacas, problemas gastrointestinales y supresión
+                                            del sistema inmunológico.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion__item">
+                                    <div class="accordion__question user-no-selection d-flex align-items-center">
+                                        <span class="number background-theme h6">4</span>
+                                        <h2 class="sm-title-block tab-title heading-color" role="tab" data-tab="3">
+                                            ¿Qué significa el concepto de inteligencia emocional y de qué manera influye
+                                            en la calidad de las relaciones interpersonales?</h2>
+                                    </div>
+                                    <div class="accordion__answer tab-description" role="tabpanel" data-tab="3">
+                                        <p>La inteligencia emocional se refiere a la capacidad de reconocer, comprender
+                                            y gestionar las propias emociones, así como la habilidad para percibir y
+                                            responder a las emociones de los demás. En las relaciones interpersonales,
+                                            la inteligencia emocional es crucial para la empatía, la comunicación
+                                            efectiva y la construcción de vínculos saludables.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ========== End Preguntas frecuentes ========== -->
+
+
+            <!-- ========== Contacto ========== -->
+            <div class="p-relative contact-form over-hidden section-padding">
+                <div class="dsn-mask p-absolute w-70 left-0 top-0 h-100 background-section"></div>
+                <div class="p-relative container d-grid grid-1-half" data-dsn-gap="30px 60px">
+                    <div class="box-form">
+                        <h2 class="title-h2 mb-60">Estamos en contacto</h2>
+                        <div class="dsn-form mt-20 form-box d-flex flex-column">
+                            <form id="contact-form" class="form w-100" method="post" action="contact.php.json"
+                                data-toggle="validator">
+                                <div class="messages"></div>
+                                <div class="input__wrap controls">
+                                    <div class="d-grid grid-md-2" data-dsn-gap="0px 30px">
+                                        <div class="form-group dsn-up">
+                                            <div class="entry-box">
+
+                                                <input id="form_name" type="text" name="name" placeholder="Nombre"
+                                                    required="required" data-error="Ingresar el nombre." />
+                                            </div>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                        <div class="form-group dsn-up">
+                                            <div class="entry-box">
+
+                                                <input id="form_email" type="email" name="email" placeholder="E-mail"
+                                                    required="required" data-error="Ingresar e-mail válido." />
+                                            </div>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group dsn-up">
+                                        <div class="entry-box">
+
+                                            <textarea id="form_message" class="form-control" name="message" rows="7"
+                                                placeholder="Dejanos un mensaje" required="required"
+                                                data-error="Por favor, dejá un mensaje."></textarea>
+                                        </div>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+
+                                    <div class="d-flex dsn-up">
+                                        <div class="image-zoom move-circle border-color-default border-style"
+                                            data-dsn="parallax">
+                                            <input type="submit" value="Enviar">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="box-info p-30 background-theme">
+                        <div class="icon-left dsn-icon-heading-color d-flex align-items-center h-100">
+                            <div class="d-grid dsn-service icon-left align-items-center">
+                                <div class="service-item p-relative grid-item style-box background-transparent">
+                                    <div class="service-item-inner number-item h-100">
+                                        <div class="dsn-icon"><i class="fas fa-phone-volume" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="service-content p-relative">
+                                            <h4 class="service_title sm-title-block">
+                                                Teléfono:</h4>
+                                            <div class="service_description mt-10 max-w570 dsn-auto">
+                                                <p>11 4561-7893</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-item p-relative grid-item style-box background-transparent">
+                                    <div class="service-item-inner number-item h-100">
+                                        <div class="dsn-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+                                        <div class="service-content p-relative">
+                                            <h4 class="service_title sm-title-block">
+                                                Escribinos:</h4>
+                                            <div class="service_description mt-10 max-w570 dsn-auto">
+                                                <p>info@saludmentalonline.com.ar</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-item p-relative grid-item style-box background-transparent">
+                                    <div class="service-item-inner number-item h-100">
+                                        <div class="dsn-icon"><i class="fab fa-linkedin-in"></i></div>
+                                        <div class="service-content p-relative">
+                                            <div class="service_description max-w570 dsn-auto">
+                                                <p>@saludmentalonline</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-item p-relative grid-item style-box background-transparent">
+                                    <div class="service-item-inner number-item h-100">
+                                        <div class="dsn-icon"><i class="fab fa-instagram"></i></div>
+                                        <div class="service-content p-relative">
+                                            <div class="service_description max-w570 dsn-auto">
+                                                <p>@saludmentalonline</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ========== End Contacto ========== -->
+
+
+            <!-- ========== Footer ========== -->
+            <footer id="dsn_footer" class="dsn-footer p-relative">
+
+                <div class="footer-content p-relative container">
+                    <div class="footer-bottom mt-60 pt-30 pb-30 text-center">
+                        <p class="over-hidden">© 2023 · Salud Mental Online</p>
+                    </div>
+                </div>
+            </footer>
+            <!-- ========== End Footer ========== -->
+
+        </div>
+
+
+    </main>
+
+    <!-- ========== Cursor ========== -->
+    <div id="dsn_cursor" class="ball"></div>
+    <div id="dsn_cursor_inner" class="ball"></div>
+    <!-- ========== End Cursor ========== -->
+
+
+    <!-- ========== Line BG ========== -->
+    <div id="line_head"><span class="container"></span></div>
+    <!-- ========== End Line BG ========== -->
+
+    <script src="assets/js/jquery-3.1.1.min.js"></script>
+    <script src="assets/js/plugins.min.js"></script>
+    <script src="assets/js/plugins/dsn-grid.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Smooth scroll on click
+            $('a[href^="#"]').on('click', function (event) {
+                var target = $($(this).attr('href'));
+
+                if (target.length) {
+                    event.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+
+                    // Close the menu if it's open (you may need to adjust this selector)
+                    $('#navbar_toggle').removeClass('active');
+                    $('.main-navigation').removeClass('active');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
